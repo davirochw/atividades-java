@@ -5,9 +5,11 @@ import br.com.davi.atividades.oometodos.dominio.Employee;
 public class EmployeeTest {
     public static void main(String[] args) {
         Employee employee = new Employee();
-        employee.name = "João";
-        employee.age = 23;
-        employee.salary = new double[]{2500, 2700, 3000, 4500};
-        employee.prints();
+        employee.setName("João");
+        employee.setAge(23);
+        employee.setSalary(new double[]{2500, 2700, 3000, 4500});
+        employee.printInf();
+
+        System.out.println("\nMédia salarial: " + employee.getAverage());
     }
 }
