@@ -1,10 +1,10 @@
 package br.com.davi.atividades.oometodos.dominio;
 
 public class Employee {
-    public String name;
-    public int age;
-    public double[] salary;
-    public double average;
+    private String name;
+    private int age;
+    private double[] salary;
+    private double average;
 
     public void printInf() {
         System.out.println(this.name);
@@ -29,24 +29,12 @@ public class Employee {
         average /= salary.length;
     }
 
-    public String getName() {
-        return name;
-    }
-
     public void setName(String name) {
         this.name = name;
     }
 
-    public int getAge() {
-        return age;
-    }
-
     public void setAge(int age) {
         this.age = age;
-    }
-
-    public double[] getSalary() {
-        return salary;
     }
 
     public void setSalary(double[] salary) {
